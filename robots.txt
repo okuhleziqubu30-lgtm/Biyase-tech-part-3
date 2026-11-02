@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Sitemap: https://sprightly-mermaid-7daa3b.netlify.app/sitemap.xml

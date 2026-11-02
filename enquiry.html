@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-ZA">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Enquiry | Biyase Tech</title>
+        <meta name="description" content="Ask Biyase Tech about website development, software, IT support, graphic design or digital marketing services.">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://sprightly-mermaid-7daa3b.netlify.app/enquiry.html">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/site.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html">Biyase Tech</a>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <ul data-site-nav>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="page-banner">
+                <div class="container">
+                    <h1>Make a project enquiry</h1>
+                    <p>Tell us what you are interested in. We’ll show a relevant next step before you submit.</p>
+                </div>
+            </section>
+            <section class="section container">
+                <form class="form-card" name="enquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="enquiry">
+                    <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+                    <label for="enquiry-name">Full name</label>
+                    <input id="enquiry-name" name="name" autocomplete="name" required minlength="2">
+                    <label for="enquiry-email">Email address</label>
+                    <input id="enquiry-email" name="email" type="email" autocomplete="email" required>
+                    <label for="enquiry-phone">Phone number (optional)</label>
+                    <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="[+0-9() .-]{7,20}" title="Enter a phone number using 7 to 20 digits or common phone symbols">
+                    <label for="enquiry-service">I’m interested in</label>
+                    <select id="enquiry-service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Website Development</option>
+                        <option>Software Development</option>
+                        <option>IT Support</option>
+                        <option>Graphic Design</option>
+                        <option>Digital Marketing</option>
+                        <option>Volunteering</option>
+                        <option>Sponsorship</option>
+                    </select>
+                    <label for="enquiry-details">Project details</label>
+                    <textarea id="enquiry-details" name="details" rows="5" required minlength="10" maxlength="1500"></textarea>
+                    <p id="estimate-result" class="status" aria-live="polite">Choose a service to see what information will follow. A final price or availability needs confirmation by Biyase Tech.</p>
+                    <button type="submit">Send enquiry</button>
+                    <p data-form-status class="status" role="status" aria-live="polite"></p></form>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <div class="container"><p>© 2026 Biyase Tech · <a href="contact.html">General contact</a></p>
+                </div>
+            </footer>
+        </body>
+        </html>
+
